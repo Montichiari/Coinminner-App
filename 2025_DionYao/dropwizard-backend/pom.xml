@@ -29,6 +29,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            
+            <dependency>
+			     <groupId>org.junit</groupId>
+			     <artifactId>junit-bom</artifactId>
+			     <version>5.13.2</version> <!-- Make sure this matches your preferred version -->
+			     <type>pom</type>
+			     <scope>import</scope>
+			</dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -49,6 +57,23 @@
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
+        
+        <dependency>
+		    <groupId>org.eclipse.jetty</groupId>
+		    <artifactId>jetty-servlets</artifactId>
+		    <version>11.0.25</version>
+		</dependency>
+		
+		  <dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <scope>test</scope>
+		  </dependency>
+		  <dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-engine</artifactId>
+		    <scope>test</scope>
+		  </dependency>
     </dependencies>
 
     <build>
