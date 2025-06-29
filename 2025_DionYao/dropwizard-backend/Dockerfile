@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:latest
+FROM eclipse-temurin:17-jre
 
 EXPOSE 8080 8081
 
